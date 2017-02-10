@@ -1,0 +1,41 @@
+body{
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+.container {
+  width: 80%;
+}
+h1, h3
+{
+    text-align:center;
+}
+h3
+{
+    background-color:black;
+    color:white;
+    font-size:0.9em;
+    margin-bottom:0px;
+}
+.subtitle {
+  text-align: center;
+}
+.news p
+{
+    background-color:#CCCCCC;
+    margin-top:0px;
+}
+#titre,.news
+{
+    width:70%;
+    margin:auto;
+}
+#titre span {
+  font-style: italic;
+}
+
+a
+{
+    text-decoration: none;
+    color: blue;
+}
