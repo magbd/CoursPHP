@@ -1,0 +1,113 @@
+body {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  background-image: url('img/subtle_dots_@2X.png');
+  font-family: 'Raleway', sans-serif;
+}
+
+#container {
+  width: 80%;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 50px;
+}
+
+/*GAUCHE : FORMULAIRE*/
+#gauche {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  justify-content: space-between;
+}
+#titre{
+  display: flex;
+  flex-direction: column;
+}
+
+h1{
+  font-family: 'Archivo Black', sans-serif;
+  color: #BABABA;
+  font-weight: normal;
+  text-transform: uppercase;
+  margin-bottom: 0;
+}
+
+#subtitle {
+  line-height: 1.5em;
+  color: #BABABA;
+  font-weight: bold;
+  border-top: 1px solid #BABABA;
+  margin-top: 0;
+}
+
+#baseline {
+  color: #BABABA;
+  font-size: 0.8em;
+}
+
+#baseline a{
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.rond{
+  width:100px;
+  height:100px;
+  background:#39C48E;
+  -webkit-border-radius:100px;
+  -moz-border-radius:100px;
+  -o-border-radius:100px;
+  border-radius:100px;
+  background-image: url('img/face.svg');
+  background-size: 80%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+#message, #pseudo {
+  margin-bottom: 10px;
+  font-family: inherit;
+  font-size: inherit;
+}
+#message {
+  height: 80px;
+  border: 1px solid #BABABA;
+  border-radius: 10px;
+  padding: 1em;
+}
+#pseudo {
+  border: 1px solid #BABABA;
+  border-radius: 10px;
+  padding: 0.5em 1em;
+}
+
+#button{
+  border: 1px solid;
+  border-radius: 10px;
+  padding: 0.5em 1em;
+  background-color: #39C48E;
+  color: white;
+  width: 30%;
+  align-self: flex-end;
+}
+
+/*DROITE : AFFICHAGE*/
+#affichage {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  background-color: white;
+  border: 1px solid #BABABA;
+  border-radius: 10px;
+  padding: 1%;
+}
+
+label, span {
+  color: #39C48E;
+  font-weight: bold;
+}
