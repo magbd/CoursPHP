@@ -10,8 +10,9 @@ if(isset($_POST['valider']) && !empty($_POST['pseudo']) && !empty($_POST['messag
   $expire = 365*24*3600;
   setcookie('pseudo', $pseudo, time()+$expire);
 
-  //appelle la base de donnée
-  $bdd = new PDO('mysql:host=localhost;dbname=miniChat', 'root', 'upto34', array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION));
+  //appel le fichier connect_bdd.php qui créé/lance une fonction qui return une instance PDO et initialise $bdd = new PDO...
+  require_once('connect_bdd.php');
+
   //requête préparée
   $requete = $bdd->prepare('INSERT INTO chat(pseudo, message) VALUES(? , ?)');
   $requete->execute(array($pseudo, $message));

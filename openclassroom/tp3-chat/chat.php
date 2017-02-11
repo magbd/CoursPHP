@@ -44,8 +44,9 @@
 
     <div id="affichage">
       <?php
-      //appel la base de donnée
-      $bdd = new PDO('mysql:host=localhost;dbname=miniChat', 'root', 'upto34', array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION));
+      //appel le fichier connect_bdd.php qui créé/lance une fonction qui return une instance PDO et initialise $bdd = new PDO...
+      require_once('connect_bdd.php');
+
       //requête avec filtres et tri des données à récupérer
       $reponse = $bdd->query('SELECT pseudo, message, DATE_FORMAT(date_creation, "Envoyé le %d/%m/%Y à %Hh %imin %ss") AS date FROM chat ORDER BY ID DESC LIMIT 10');
 
