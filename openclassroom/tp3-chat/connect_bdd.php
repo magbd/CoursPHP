@@ -11,7 +11,7 @@ $password = 'upto34';
 
 ////////////////////////////////////////////////
 
-function connectPDOMysql($parm1, $param2, $param3, $param4)
+function connectPDOMysql($param1, $param2, $param3, $param4)
   {
     // return une instance PDO
     return new PDO('mysql:host='.$param1.';dbname='.$param2, $param3, $param4, array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION));
