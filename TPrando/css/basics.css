@@ -1,0 +1,169 @@
+/*////////////////////////////////////////////*/
+/*GENERAL*/
+/*////////////////////////////////////////////*/
+body {
+  margin: 0 auto;
+  font-family: 'Fjalla One', sans-serif;
+  background-image: url("../img/tree_bark.png");
+}
+.container {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+
+}
+.main {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px 20px 40px 20px;
+  position: relative;
+}
+
+h2{
+  text-align: center;
+  font-weight: normal;
+  text-transform: uppercase;
+  color: #85CD8A;
+}
+
+/*////////////////////////////////////////////*/
+/*HEADER*/
+/*////////////////////////////////////////////*/
+header{
+  display: flex;
+  background-color: #85cd8a;
+  padding: 20px 0;
+}
+#logo {
+  width: 50%;
+  display: flex;
+  align-items: center;
+}
+#logo img {
+  width: 40px;
+  /*padding: 10px;*/
+  height: 40px;
+}
+h1{
+  margin: 0;
+  color: white;
+}
+
+/*////////////////////////////////////////////*/
+/*AFFICHAGE DES FORMULAIRES*/
+/*////////////////////////////////////////////*/
+
+label, select, input{
+  width: 150px;
+  display: inline-block;
+  margin: 5px 0;
+}
+
+.formulaire {
+  display: flex;
+  justify-content: center;
+}
+
+form {
+  background-color: white;
+  border: solid 1px grey;
+  border-radius: 10px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+/*////////////////////////////////////////////*/
+/*AFFICHAGE DU TABLEAU*/
+/*////////////////////////////////////////////*/
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  text-align: left;
+  padding: 20px 0;
+}
+
+th {
+  color: #85CD8A;
+}
+
+tr {
+  border-bottom: solid 1px #BABABA;
+}
+
+td {
+  min-width: 90px;
+}
+
+tbody tr:hover {
+  background-color: #ededed;
+}
+
+/*////////////////////////////////////////////*/
+/*AFFICHAGE DES BOUTONS*/
+/*////////////////////////////////////////////*/
+
+.button {
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  border-radius: 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+.buttonCreate, .buttonRead {
+  background-color: #076C37;
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  width:100px;
+  height:100px;
+  -webkit-border-radius:100px;
+  -moz-border-radius:100px;
+  -o-border-radius:100px;
+  border-radius:100px;
+
+  position: absolute;
+  top: -50px;
+  right: 30px;
+}
+.buttonSubmit{
+  background-color: #076C37;
+  margin: auto;
+  margin-top: 20px;
+  cursor: pointer;
+  align-self: center;
+}
+
+.buttonUpdate {
+  background-color: #bababa;
+}
+.buttonDelete {
+  background-color: #e74141;
+}
+
+/*////////////////////////////////////////////*/
+/*FOOTER*/
+/*////////////////////////////////////////////*/
+
+footer {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  background-color: #85cd8a;
+  padding: 20px 0;
+  position: fixed;
+  bottom: 0;
+  color: white;
+}
